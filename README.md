@@ -1,5 +1,5 @@
 # PyTrader
-Welcome, and thank you for using PyTrader Version 1.1!
+Welcome, and thank you for using PyTrader!
 
 Please make sure you have the newest version of Python installed before
 proceeding any further through the instructions...

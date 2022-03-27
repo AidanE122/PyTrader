@@ -12,11 +12,11 @@ information should be entered as shown below in order for the program to connect
 to your Coinbase Pro account and compile correctly. 
 
 Example:
-*************************************************************************
+####################################################################
 Enter your API credentials in the space below each question:
 -----------------------------------------------
 Nickname:
-\t<Name that you would like to give this API>\
+<Name that you would like to give this API>
 -----------------------------------------------
 Passphrase:
 <Your passphrase here>
@@ -27,7 +27,7 @@ API Secret Key:
 API Public Key:
 <Your API Public Key here>
 -----------------------------------------------
-*************************************************************************
+####################################################################
 
 NOTE: The "nickname" field does not have to be the same as the one you gave to
 your API on your Coinbase Pro account, you can enter whatever name you would like. 

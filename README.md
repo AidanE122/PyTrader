@@ -18,14 +18,14 @@ Enter your API credentials in the space below each question:
 Nickname:                 
 =Name that you would like to give this API=
 -----------------------------------------------
-Passphrase:
-<Your passphrase here>
+Passphrase:               
+=Your passphrase here=
 -----------------------------------------------
-API Secret Key:
-<Your API Secret Key here>
+API Secret Key:               
+=Your API Secret Key here=
 -----------------------------------------------
-API Public Key:
-<Your API Public Key here>
+API Public Key:               
+=Your API Public Key here=
 -----------------------------------------------
 ####################################################################
 

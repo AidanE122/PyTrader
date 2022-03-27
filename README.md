@@ -15,7 +15,7 @@ Example:
 ####################################################################
 Enter your API credentials in the space below each question:
 -----------------------------------------------
-Nickname:
+Nickname:\t
 Name that you would like to give this API
 -----------------------------------------------
 Passphrase:

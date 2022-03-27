@@ -11,7 +11,7 @@ This can be done through the Notepad app that comes installed on Windows. API
 information should be entered as shown below in order for the program to connect
 to your Coinbase Pro account and compile correctly. 
 
-Example;
+Example:
 
 Enter your API credentials in the space below each question:
 -----------------------------------------------

@@ -9,7 +9,9 @@ Before you start up the "Start_PyTrader.bat" file, you will need to make sure
 your Coinbase Pro API information is entered correctly in the "Passphrase" file. 
 This can be done through the Notepad app that comes installed on Windows. API 
 information should be entered as shown below in order for the program to connect
-to your Coinbase Pro account and compile correctly. 
+to your Coinbase Pro account and compile correctly. Please make sure that you give
+your Coinbase Pro API permission to view and trade in order for PyTrader to be 
+able to place trades.
 
 Example:
 

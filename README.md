@@ -1,6 +1,10 @@
 # PyTrader
 Welcome, and thank you for using PyTrader!
 
+Please make sure you read all the way through this document as well as 
+'packages.txt' before starting PyTrader. This will help to reduce potential
+errors when setting up the bot.
+
 Please make sure you have the newest version of Python installed before
 proceeding any further through the instructions...
 (Latest Python version can be downloaded from https://www.python.org/downloads/)

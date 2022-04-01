@@ -3,6 +3,9 @@ packages are installed and up-to-date in order for PyTrader
 to run function correctly. Ensure that the newest versions
 of Python and pip are also installed on your Windows computer.
 
+If you have not installed pip for Python already, please follow
+the guide at https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
+
 Necessary packages are as follows:
 
 cbpro...........................................(Current ver. 1.1.4)

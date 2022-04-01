@@ -1,6 +1,7 @@
 Before starting PyTrader, please ensure that the following 
 packages are installed and up-to-date in order for PyTrader
-to run function correctly. 
+to run function correctly. Ensure that the newest versions
+of Python and pip are also installed on your Windows computer.
 
 Necessary packages are as follows:
 

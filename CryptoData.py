@@ -28,6 +28,7 @@ crypto_symbols = ['BTCUSD', 'ETHUSD', 'ADAUSD', 'DOGEUSD', 'AVAXUSD', 'DOTUSD', 
                   'PLUUSD', 'ACHUSD', 'UPIUSD', 'SHPINGUSD', 'PLAUSD', 'MCO2USD', 'APEUSD', 'CRPTUSD', ]
 
 # Adding soon : MINAUSD
+# Last date checked : Mar. 24
 
 crypto_list = []
 

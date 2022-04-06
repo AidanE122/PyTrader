@@ -34,6 +34,9 @@ API Public Key:
 =Your API Public Key here=
 -----------------------------------------------
 
+NOTE: Please do not include the equals signs '=' at the beginning and end of your
+API information, these were only included to denote where users should enter their
+information in order for PyTrader to compile correctly.
 
 NOTE: The "nickname" field does not have to be the same as the one you gave to
 your API on your Coinbase Pro account, you can enter whatever name you would like. 

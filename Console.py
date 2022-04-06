@@ -1,3 +1,5 @@
+import math
+
 import tradingview_ta
 from CryptoData import *
 import time
@@ -43,6 +45,20 @@ def getAverageRSIOfMarket():
     result = str(round(result, 2))
     return result
 
+def calculateAmountPerTrade(fiat):
+    tenthOfAccount = math.floor(float(fiat) * 0.1)
+    return tenthOfAccount
+
+def getAccountValue():
+    accountValue = input('\n'
+                         '\t\t\t                                Welcome! \n'
+                         '\t\t      Let\'s start by entering the total amount of money in your Coinbase account:\n'
+                         '\t\t\t                                $')
+    return accountValue
+
+def formatAmountPerTrade(value):
+    format_value = "{:.2f}".format(value)
+    return format_value
 
 def printSplashText():
     print('\t\t\t\t\t ______________________________________' +

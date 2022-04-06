@@ -23,7 +23,13 @@ def calculateVolume(thisCoin):
 
 printSplashText()
 time.sleep(4)
-print('\n\n'
+
+tradeVal = calculateAmountPerTrade(getAccountValue())
+time.sleep(1)
+print('\nProcessing request...')
+time.sleep(4)
+
+print('\n'
       'Please wait, getting average RSI of market...\n')
 print('Average crypto market RSI is ' + str(getAverageRSIOfMarket()) + ' for '
       + str(crypto_list.__len__()) + ' total cryptocurrencies\n')
@@ -43,14 +49,14 @@ while True:
             if (extractRSI(crypto) <= 30) and (calculateVolume(crypto) >= 5000000):
                 auth_client.place_market_order(product_id=formatSymbol(crypto),
                                                side='buy',
-                                               funds='50.00')
-                print('\nAttempting to buy $50 of ' + crypto.symbol + '\n')
+                                               funds=formatAmountPerTrade(tradeVal))
+                print('\nAttempting to buy $' + str(tradeVal) + ' of ' + crypto.symbol + '\n')
                 time.sleep(5)
             elif extractRSI(crypto) >= 70:
                 auth_client.place_market_order(product_id=formatSymbol(crypto),
                                                side='sell',
-                                               funds='50.00')
-                print('\nAttempting to sell $50 of ' + crypto.symbol + '\n')
+                                               funds=(formatAmountPerTrade(tradeVal)))
+                print('\nAttempting to sell $' + str(tradeVal) + ' of ' + crypto.symbol + '\n')
                 time.sleep(5)
             else:
                 print('Waiting...')
@@ -88,3 +94,4 @@ while True:
 #         print('Network error, reconnecting in 1 min.')
 #         time.sleep(60)
 #         continue
+

@@ -25,10 +25,10 @@ crypto_symbols = ['BTCUSD', 'ETHUSD', 'ADAUSD', 'DOGEUSD', 'AVAXUSD', 'DOTUSD', 
                   'RNDRUSD', 'QSPUSD', 'GFIUSD', 'LCXUSD', 'FARMUSD', 'BLZUSD', 'JASMYUSD', 'MPLUSD',
                   'DIAUSD', 'RBNUSD', 'SUKUUSD', 'RAIUSD', 'WLUNAUSD', 'CTXUSD', 'ASMUSD', 'FOXUSD',
                   'UNFIUSD', 'INVUSD', 'KRLUSD', 'MDTUSD', 'COVALUSD', 'AVTUSD', 'GYENUSD', 'NCTUSD',
-                  'PLUUSD', 'ACHUSD', 'UPIUSD', 'SHPINGUSD', 'PLAUSD', 'MCO2USD', 'APEUSD', 'CRPTUSD', ]
+                  'PLUUSD', 'ACHUSD', 'UPIUSD', 'SHPINGUSD', 'PLAUSD', 'MCO2USD', 'APEUSD', 'CRPTUSD',
+                  'MINAUSD']
 
-# Adding soon : MINAUSD
-# Last date checked : Mar. 24
+# Crypto symbols last updated on : Apr. 6
 
 crypto_list = []
 

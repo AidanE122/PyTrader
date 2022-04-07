@@ -1,5 +1,5 @@
 import math
-
+from datetime import datetime
 import tradingview_ta
 from CryptoData import *
 import time
@@ -59,6 +59,11 @@ def getAccountValue():
 def formatAmountPerTrade(value):
     format_value = "{:.2f}".format(value)
     return format_value
+
+def getTime():
+    now = datetime.now()
+    current_time = now.strftime("[%H:%M:%S] ")
+    return current_time
 
 def printSplashText():
     print('\t\t\t\t\t ______________________________________' +

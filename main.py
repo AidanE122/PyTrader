@@ -36,6 +36,8 @@ print('Average crypto market RSI is ' + str(getAverageRSIOfMarket()) + ' for '
 time.sleep(4)
 print('Initializing crypto market scan...\n')
 time.sleep(3)
+print('Connection to Coinbase API successful. Market scanning will now begin.\n')
+time.sleep(3)
 
 """
 1. Buy if RSI is 30 or less and 24HR volume is 5 Mil. or greater
@@ -50,19 +52,18 @@ while True:
                 auth_client.place_market_order(product_id=formatSymbol(crypto),
                                                side='buy',
                                                funds=formatAmountPerTrade(tradeVal))
-                print('\nAttempting to buy $' + str(tradeVal) + ' of ' + crypto.symbol + '\n')
+                print(getTime() + '\nAttempting to buy $' + str(tradeVal) + ' of ' + crypto.symbol + '\n')
                 time.sleep(5)
             elif extractRSI(crypto) >= 70:
                 auth_client.place_market_order(product_id=formatSymbol(crypto),
                                                side='sell',
                                                funds=(formatAmountPerTrade(tradeVal)))
-                print('\nAttempting to sell $' + str(tradeVal) + ' of ' + crypto.symbol + '\n')
+                print(getTime() + '\nAttempting to sell $' + str(tradeVal) + ' of ' + crypto.symbol + '\n')
                 time.sleep(5)
             else:
-                print('Waiting...')
                 time.sleep(8)
     except:
-        print('Network error, reconnecting in 1 min.')
+        print(getTime() + 'Network error, reconnecting in 1 min.')
         time.sleep(60)
         continue
 

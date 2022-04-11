@@ -30,6 +30,11 @@ def formatSymbol(thisCoin):
     return formattedSymbol
 
 
+def addSuffixToSymbol(currencyName):
+    formattedString = currencyName + ('-USD')
+    return formattedString
+
+
 def runNewReport():
     print('Running new report...')
     time.sleep(1)
@@ -45,25 +50,22 @@ def getAverageRSIOfMarket():
     result = str(round(result, 2))
     return result
 
+
 def calculateAmountPerTrade(fiat):
     tenthOfAccount = math.floor(float(fiat) * 0.1)
     return tenthOfAccount
 
-def getAccountValue():
-    accountValue = input('\n'
-                         '\t\t\t                                Welcome! \n'
-                         '\t\t      Let\'s start by entering the total amount of money in your Coinbase account:\n'
-                         '\t\t\t                                $')
-    return accountValue
 
 def formatAmountPerTrade(value):
-    format_value = "{:.2f}".format(value)
+    format_value = str(round(value, 2))
     return format_value
+
 
 def getTime():
     now = datetime.now()
     current_time = now.strftime("[%H:%M:%S] ")
     return current_time
+
 
 def printSplashText():
     print('\t\t\t\t\t ______________________________________' +
@@ -74,3 +76,15 @@ def printSplashText():
           '\n\t\t\t\t\t|       TradingView (Ver. ' + tradingview_ta.__version__ + ')      |'
           '\n\t\t\t\t\t|           CBPro (Ver. 1.1.4)         |'
           '\n\t\t\t\t\t|______________________________________|')
+
+
+def accountBalText(text):
+    print('your balance is ' + text)
+
+def addDots(str):
+    if len(str) == 7:
+        return str + '.......'
+    elif len(str) == 8:
+        return str + '......'
+    else:
+        return str + '.......'

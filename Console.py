@@ -70,7 +70,7 @@ def getTime():
 def printSplashText():
     print('\t\t\t\t\t ______________________________________' +
           '\n\t\t\t\t\t|                                      |'
-          '\n\t\t\t\t\t|         PyTrader Version 1.2         |' +
+          '\n\t\t\t\t\t|        PyTrader Version 1.2.1        |' +
           '\n\t\t\t\t\t|                 ***                  |'
           '\n\t\t\t\t\t|              Powered by:             |'
           '\n\t\t\t\t\t|       TradingView (Ver. ' + tradingview_ta.__version__ + ')      |'

@@ -22,21 +22,17 @@ Example:
 Enter your API credentials in the space below each question:
 -----------------------------------------------
 Nickname:                 
-=Name that you would like to give this API=
+Name that you would like to give this API
 -----------------------------------------------
 Passphrase:               
-=Your passphrase here=
+Your passphrase here
 -----------------------------------------------
 API Secret Key:               
-=Your API Secret Key here=
+Your API Secret Key here
 -----------------------------------------------
 API Public Key:               
-=Your API Public Key here=
+Your API Public Key here
 -----------------------------------------------
-
-NOTE: Please do not include the equals signs '=' at the beginning and end of your
-API information, these were only included to denote where users should enter their
-information in order for PyTrader to compile correctly.
 
 NOTE: The "nickname" field does not have to be the same as the one you gave to
 your API on your Coinbase Pro account, you can enter whatever name you would like. 

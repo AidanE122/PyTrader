@@ -1,4 +1,4 @@
-![alt text](https://github.com/AidanE122/PyTrader/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/AidanE122/PyTrader/blob/main]/image.jpg?raw=true)
 
 # PyTrader
 Welcome, and thank you for using PyTrader!

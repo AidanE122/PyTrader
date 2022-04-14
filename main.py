@@ -1,6 +1,6 @@
 from console import *
 
-extractUserData()
+
 printSplashText()
 initializeAPI()
 

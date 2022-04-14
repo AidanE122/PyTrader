@@ -4,13 +4,11 @@ import tradingview_ta
 from crypto_data import *
 
 
-def extractUserData():
-    global auth_client
-    userData = open(os.path.join(sys.path[0], 'passphrase'), 'r').read().splitlines()
-    passphrase = userData[6]
-    secret = userData[9]
-    public = userData[12]
-    auth_client = cbpro.AuthenticatedClient(public, secret, passphrase)
+userData = open(os.path.join(sys.path[0], 'passphrase'), 'r').read().splitlines()
+passphrase = userData[6]
+secret = userData[9]
+public = userData[12]
+auth_client = cbpro.AuthenticatedClient(public, secret, passphrase)
 
 
 def printSplashText():

@@ -1,5 +1,7 @@
 ![alt text](https://github.com/AidanE122/PyTrader/blob/main/PyTrader.png | width = 100)
 
+<img src="https://github.com/AidanE122/PyTrader/blob/main/PyTrader.png" width="100" height="100">
+
 # PyTrader
 Welcome, and thank you for using PyTrader!
 

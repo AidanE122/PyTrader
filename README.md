@@ -1,5 +1,5 @@
 
-<img src="https://github.com/AidanE122/PyTrader/blob/main/Logo.png" width="371" height="109">
+<img src="https://github.com/AidanE122/PyTrader/blob/main/logo.png" width="371" height="109">
 
 Welcome, and thank you for using PyTrader!
 

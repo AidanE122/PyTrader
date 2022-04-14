@@ -42,8 +42,9 @@ This is only included so you can more easily remember which API you have linked
 to PyTrader.
 
 Once your API information has been entered, simply double-click "start_PyTrader.bat"
-in order to start the trader. If you wish to disable PyTrader, just exit out of the 
-program and all trades will be halted until you choose to run the program again.
+if you are on a Windows PC in order to start the trader. If you wish to disable 
+PyTrader, just exit out of the program and all trades will be halted until you choose 
+to run the program again.
 
 Just a reminder, PyTrader is still a very new program, and there is still an enormous
 amount of features and tweaks that I would like to make to it before I am somewhat

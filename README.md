@@ -9,8 +9,8 @@ Please make sure you have the newest version of Python installed before
 proceeding any further through the instructions...
 (Latest Python version can be downloaded from https://www.python.org/downloads/)
 
-Before you start up the "Start_PyTrader.bat" file, you will need to make sure 
-your Coinbase Pro API information is entered correctly in the "Passphrase" file. 
+Before you start up the "start_PyTrader.bat" file, you will need to make sure 
+your Coinbase Pro API information is entered correctly in the "passphrase" file. 
 This can be done through the Notepad app that comes installed on Windows. API 
 information should be entered as shown below in order for the program to connect
 to your Coinbase Pro account and compile correctly. Please make sure that you give
@@ -39,7 +39,7 @@ your API on your Coinbase Pro account, you can enter whatever name you would lik
 This is only included so you can more easily remember which API you have linked 
 to PyTrader.
 
-Once your API information has been entered, simply double-click "Start_PyTrader.bat"
+Once your API information has been entered, simply double-click "start_PyTrader.bat"
 in order to start the trader. If you wish to disable PyTrader, just exit out of the 
 program and all trades will be halted until you choose to run the program again.
 

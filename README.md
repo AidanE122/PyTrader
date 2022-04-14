@@ -1,4 +1,4 @@
-![alt text](https://github.com/AidanE122/PyTrader/blob/main/PyTrader.png=250x250)
+![alt text](https://github.com/AidanE122/PyTrader/blob/main/PyTrader.png | width = 100)
 
 # PyTrader
 Welcome, and thank you for using PyTrader!

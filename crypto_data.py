@@ -2,7 +2,7 @@ from tradingview_ta import *
 
 currentExchange = "COINBASE"
 currentScreener = "crypto"
-currentTimeInterval = Interval.INTERVAL_15_MINUTES
+currentTimeInterval = Interval.INTERVAL_30_MINUTES
 currentTimeoutValue = None
 
 crypto_symbols = ['BTCUSD', 'ETHUSD', 'ADAUSD', 'DOGEUSD', 'AVAXUSD', 'DOTUSD', 'SHIBUSD', 'XTZUSD',
@@ -23,12 +23,12 @@ crypto_symbols = ['BTCUSD', 'ETHUSD', 'ADAUSD', 'DOGEUSD', 'AVAXUSD', 'DOTUSD', 
                   'STORJUSD', 'MUSDUSD', 'ORCAUSD', 'QUICKUSD', 'REQUSD', 'LQTYUSD', 'ARPAUSD',
                   'HIGHUSD', 'ALICEUSD', 'AERGOUSD', 'SNTUSD', 'SYNUSD', 'BICOUSD', 'GLMUSD', 'AIOZUSD',
                   'RNDRUSD', 'QSPUSD', 'GFIUSD', 'LCXUSD', 'FARMUSD', 'BLZUSD', 'JASMYUSD', 'MPLUSD',
-                  'DIAUSD', 'RBNUSD', 'SUKUUSD', 'RAIUSD', 'WLUNAUSD', 'CTXUSD', 'ASMUSD', 'FOXUSD',
+                  'DIAUSD', 'RBNUSD', 'SUKUUSD', 'RAIUSD', 'CTXUSD', 'ASMUSD', 'FOXUSD',
                   'UNFIUSD', 'INVUSD', 'KRLUSD', 'MDTUSD', 'COVALUSD', 'AVTUSD', 'GYENUSD', 'NCTUSD',
                   'PLUUSD', 'ACHUSD', 'UPIUSD', 'SHPINGUSD', 'PLAUSD', 'MCO2USD', 'APEUSD', 'CRPTUSD',
-                  'MINAUSD']
+                  'MINAUSD', 'ROSEUSD', 'GMTUSD', 'GSTUSD']
 
-# Crypto symbols last updated on : Apr. 13
+# Crypto symbols last updated on : May 16th
 
 crypto_list = []
 

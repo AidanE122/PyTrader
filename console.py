@@ -14,8 +14,8 @@ auth_client = cbpro.AuthenticatedClient(public, secret, passphrase)
 def printSplashText():
     print('\n\t\t\t\t\t ______________________________________' +
           '\n\t\t\t\t\t|                                      |'
-          '\n\t\t\t\t\t|        PyTrader Version 1.2.2        |' +
-          '\n\t\t\t\t\t|                 ***                  |'
+          '\n\t\t\t\t\t|        PyTrader Version 1.2.3        |' +
+          '\n\t\t\t\t\t|                  ***                 |'
           '\n\t\t\t\t\t|              Powered by:             |'
           '\n\t\t\t\t\t|       TradingView (Ver. ' + tradingview_ta.__version__ + ')      |'
           '\n\t\t\t\t\t|           CBPro (Ver. 1.1.4)         |'
@@ -77,10 +77,10 @@ def calculate24HRVolume(thisCoin):
     return thisVolume
 
 
-def placeMarketOrder(side, crypto, tradingVal):
+def placeMarketOrder(side, crypto, fiat):
     auth_client.place_market_order(product_id=addHyphenToSymbol(crypto),
                                    side=side,
-                                   funds=getAmountPerTrade(tradingVal))
+                                   funds=fiat)
 
 
 def getRSI(thisCoin):
@@ -134,7 +134,30 @@ def addPeriods(string):
 
 
 def printAccountValue(num1, num2):
-    print('\nYour Coinbase Pro account value............$' + str(num1))
-    print('Trades will be placed in increments of.....$' + str(num2) + '.00\n')
-    print('###################################################\n')
+    print('\nYour Coinbase Pro account value.................$' + str(num1))
+    print('Market buys will be placed in increments of.....$' + str(num2) + '.00\n')
+    print('#########################################################\n')
     time.sleep(4)
+
+
+def isFiatAvailable(fiat):
+    USDBalance = 0.0
+    for currency in auth_client.get_accounts():
+        if currency.get('currency') == 'USD':
+            USDBalance = (round(float(currency.get('balance')), 2))
+    if USDBalance >= fiat:
+        return True
+    else:
+        return False
+
+
+def getCryptoBalanceUSD(crypto):
+    global USDBalance
+    formattedSymbol = ''.join((crypto[0:-3], '-', crypto[-3:]))
+    for currency in auth_client.get_accounts():
+        if currency.get('currency') == crypto.removesuffix('USD'):
+            currentBalance = currency.get('balance')
+            currentPrice = auth_client.get_product_ticker(formattedSymbol).get('price')
+            USDBalance = (round((float(currentBalance) * float(currentPrice)), 2))
+    return str(USDBalance)
+
